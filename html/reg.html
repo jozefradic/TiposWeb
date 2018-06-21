@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Registration</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../style/reg.css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700" rel="stylesheet"> -->
+
+</head>
+<body>
+
+	<div id="regBox">
+		<a href="../index.html"><img src="../img/tiposLogo.png" alt="logo"></a>
+
+		<div class="regHeader">First name:</div>
+		<input id="firstName" type="text" placeholder="Jack">
+
+		<div class="regHeader">Last name:</div>
+		<input id="lastName" type="text" placeholder="Daniels">
+
+		<div class="regHeader">Email:</div>
+		<input id="email" type="text" placeholder="tennesy@whisky.com">
+
+		<div class="regHeader">Login:</div>
+		<input id="login" type="text" placeholder="Jacky">
+
+		<div class="regHeader">Password:</div>
+		<input id="password" type="password" placeholder="********">
+
+		<div class="regHeader">Confirm password:</div>
+		<input id="confirmPassword" type="password" placeholder="********">
+
+		<div id="recaptcha"	class="g-recaptcha" data-sitekey="6Ldj9VQUAAAAACfkdh2SyoFBn-izipk96Slm_mPG" data-callback="Response enabledBtn"></div>
+
+		<button id="btn" style="vertical-align:middle" class="button"><span>Login</span></button>
+		<div class="or">or</div>
+		<button class="button" style="vertical-align:middle"><span>Registration </span></button>
+		
+	</div>	
+
+	
+	<script src="../script/jquery-3.2.1.min.js"></script>
+	<script src="../script/script.js"></script>
+	<script src="../script/ajax.js"></script>
+	<script src="../script/verification.js"></script>
+
+	<script type="text/javascript">
+		function btn() {
+			document.getElementById("btn").disabled = true;
+		}
+
+		function Response() {
+			var CaptchaResponse = getElementById("recaptcha").val();
+
+			if (CaptchaResponse.length == 0) {
+				alert("You are a Human");
+				document.getElementById("btn").disabled = false;
+			}
+			else {
+				alert("You are a robot!");
+			}
+		}
+	</script>
+</body>
+</html>

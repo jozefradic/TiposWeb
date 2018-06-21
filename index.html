@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>tipos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700" rel="stylesheet">
+</head>
+<body onload = "btn()">
+	
+	<div id="wrapper">
+		
+		<div id="loginBox">
+			
+			<img src="img/tiposLogo.png" alt="logo">
+
+			<input id="indexLogin" type="text" name="login" placeholder="Login type here ..."><br><br>
+
+			<input id="indexPass" type="password" name="password" placeholder="Password type here ..."><br>
+
+			<div id="recaptcha"	class="g-recaptcha" data-sitekey="6Ldj9VQUAAAAACfkdh2SyoFBn-izipk96Slm_mPG" data-callback="Response enabledBtn"></div>
+			<button id="btn" style="vertical-align:middle" class="button"><span>Login</span></button>
+			<div class="or">or</div>
+			<button class="button" onclick="location.href='file:///C:/Users/Jojo/Desktop/Skola/Web.Techn/projectTiposWeb-master/html/reg.html'" style="vertical-align:middle"><span>Registration </span></button>
+			<!-- <div class="or">or</div> -->
+			<!-- <a href="html/reg.html">Sign Up</a> -->
+
+		</div>
+
+	</div>
+
+	<script src="script/jquery-3.2.1.min.js"></script>
+	<script src="script/ajax.js"></script>
+	<script src="script/script.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+
+	<!-- <script type="text/javascript">
+		function btn() {
+			document.getElementById("btn").disabled = true;
+		}
+
+		function Response() {
+			var CaptchaResponse = getElementById("recaptcha").val();
+
+			if (CaptchaResponse.length == 0) {
+				alert("You are a Human");
+				document.getElementById("btn").disabled = false;
+			}
+			else {
+				alert("You are a robot!");
+			}
+		}
+	</script> -->
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+html,
+body {
+	padding: 0; margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+#loginBox {
+	position: absolute;
+	width: 30%;
+	top: 0; left: 0; right: 0; bottom: 0;
+	margin: auto;
+	text-align: center;
+	height: 440px;
+}
+
+#loginBox img {
+	width: 50%;
+}
+.button {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #f4511e;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+  }
+  
+  .button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+  .button:hover span {
+	padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+
+#loginBox button {
+	display: inline-block;
+	width: calc(70% + 20px);
+	height: 50px;
+	line-height: 30px;
+	padding: 10px;
+	margin: 0;
+	border: 0;
+	background-color: #0E4759;
+	border: 1px solid #0E4759;
+	margin-top: 17px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+
+#loginBox a {
+	display: inline-block;
+	width: 70%;
+	height: 30px;
+	line-height: 30px;
+	padding: 10px;
+	margin: 0;
+	border: 0;
+	background-color: #D47A0F;
+	border: 1px solid #D47A0F;
+	margin-top: 17px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+	transition: all .3s ease-in-out;
+}
+#loginBox a:hover {
+	background-color: #fff;
+	border: 1px solid #D47A0F;
+	color: #D47A0F;
+}
+
+#loginBox input {
+	width: 70%;
+	height: 30px;
+	padding: 10px;
+	margin: -1px 0;
+	font-size: 15px;
+	border: 1px solid #919191;
+}
+#loginBox input:focus {
+	outline: none;
+	border: 1px solid #D47A0F;
+}
+
+.or {
+	color: #919191;
+	font-size: 15px;
+}
+
+#loginBox a:last-child {
+	margin-top: 3px;
+}
+
+#recaptcha {
+    margin: auto;
+    width: calc(70% - 20px);
+    margin-top: 15px;
+}
